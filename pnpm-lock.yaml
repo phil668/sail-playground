@@ -1307,7 +1307,7 @@ packages:
     engines: {node: '>= 18'}
 
   '@sail/ui@file:sail-ui-2.13.0.tgz':
-    resolution: {integrity: sha512-5tq4fZoiCoPo30ptqJvoYw34xoknlJMtcZsBRho9dKmlS6Fbc457+xIGRxIXtLxBDOx1U/IRSzwUWxvaitZMcA==, tarball: file:sail-ui-2.13.0.tgz}
+    resolution: {integrity: sha512-RPpiufWni5jAt/IQ6dfX7cblBbZSbtLwlHzKtb87StDns8Plq+qCamKTDrp7+MEldFepK3/fRnj83+OWaAgZ3A==, tarball: file:sail-ui-2.13.0.tgz}
     version: 2.13.0
     peerDependencies:
       '@sail/use': 1.0.0-beta.8
