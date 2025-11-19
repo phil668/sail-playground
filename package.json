@@ -13,7 +13,7 @@
     "@sail/chart": "^0.1.0",
     "@sail/differ": "file:sail-differ-1.1.1.tgz",
     "@sail/jssdk": "1.1.0-beta.9.2",
-    "@sail/ui": "2.12.0",
+    "@sail/ui": "file:sail-ui-2.13.0.tgz",
     "@sail/use": "1.0.0-beta.8",
     "@tailwindcss/vite": "^4.1.12",
     "@unocss/preset-rem-to-px": "^65.4.2",
