@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sail Chart Demo</title>
+    <!-- ECharts 核心模块 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/core.js"></script>
+    <!-- ECharts 图表类型 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/charts.js"></script>
+    <!-- ECharts 组件 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/components.js"></script>
+    <!-- ECharts 渲染器 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/renderers.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./index.umd.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      const { createApp, h, ref } = Vue;
+      const { SailPieChart } = SailChart;
+
+      const App = {
+        setup() {
+          const data = ref([
+            { type: "分类A", value: 235 },
+            { type: "分类B", value: 274 },
+            { type: "分类C", value: 310 },
+            { type: "分类D", value: 335 },
+            { type: "分类E", value: 400 },
+          ]);
+
+          return () =>
+            h(
+              "div",
+              {
+                style: {
+                  width: "600px",
+                  height: "400px",
+                },
+              },
+              [
+                h(SailPieChart, {
+                  data: data.value,
+                  radius: ["40%", "70%"],
+                }),
+              ]
+            );
+        },
+      };
+
+      const app = createApp(App);
+      app.mount("#app");
+    </script>
+  </body>
+</html>
