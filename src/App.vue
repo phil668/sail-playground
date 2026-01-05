@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import CalendarPro from "./CalendarPro.vue";
-import { ref } from "vue";
+  import { ref } from "vue";
+  
 
-const modelValue = ref();
-const showPopup = ref(true);
+  const modelValue = ref('1234.56');
+  const info = window.navigator.userAgent;
 </script>
 
 <template>
-  time: {{ modelValue }}
-  <sail-popup :show="showPopup" position="bottom" round teleport="body">
-    <CalendarPro v-model="modelValue" @confirm="showPopup = false" />
-  </sail-popup>
+  <div class="p-4">
+    <sail-input v-model="modelValue" type="amount" />
+
+    <div class="mt-4">{{ info }}</div>
+  </div>
 </template>
